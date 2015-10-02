@@ -189,10 +189,24 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 
 
     var canvas5 = document.getElementById("problem5");
+    if (canvas5 && canvas5.getContext) {
+        var context5 = canvas5.getContext("2d");
+
+        if (context5) {
+            context5.font = "30px Times New Roman";
+            context5.fillStyle="red";
+            context5.strokeStyle= "black";
+            context5.fillText("Slowly Understanding Canvas! ",20,200);
+            context5.strokeText("Slowly Understanding Canvas! ",20,200);
+
+        }
+
+    }
 
 
 
-/*******************************************
+
+    /*******************************************
 PART 6
 
 Pixel manipulation.
