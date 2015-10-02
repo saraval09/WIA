@@ -5,6 +5,13 @@
      Comments: "HTML5 Canvas Drawing"
  */
 
+if(Modernizr.canvas) {
+
+    console.log("Canvas works!");
+
+}else{
+        console.log("Canvas is not supported in your browser ");
+    }
 
 /*******************************************
 HTML5 Shape Drawing Activity
@@ -23,6 +30,7 @@ FILE SETUP
 //Use Modernizr to verify that your browser supports canvas, include a fallback message
 
 
+
 /*******************************************
 PART 1
 
@@ -37,8 +45,22 @@ Reminder - set the style first then draw.
 //Draw Rectangle here
 
 window.onload=function(){
-    var problem1 = document.getElementById("problem1");
+    var canvas1 = document.getElementById("problem1");
+
+    if(canvas1 && canvas1.getContext){
+        var context = canvas1.getContext("2d");
+
+        if(context){
+            context.strokeStyle="black";
+            context.fillStyle="blue";
+            context.strokeRect(0, 0, 50, 100);
+            context.fillRect(0, 0, 50, 100);
+
+        }
+
+    }
 };
+
 
 
 /*******************************************
@@ -57,7 +79,23 @@ Use the arc method
 //Draw Circle here
 
 window.onload=function(){
-    var problem2 = document.getElementById("problem2");
+    var canvas2 = document.getElementById("problem2");
+
+    if(canvas2 && canvas2.getContext){
+        var context = canvas2.getContext("2d");
+
+        if(context){
+            var degrees = 180;
+            var radians = (degrees/180)*Math.PI;
+
+            context.strokeStyle="black";
+            context.fillStyle="red";
+            context.beginPath();
+            context.arc(50, 50, 20, 0, radians);
+
+        }
+
+    }
 };
 
 
@@ -77,7 +115,7 @@ Height and width and color are up to you.
 //Draw Star here
 
 window.onload=function(){
-    var problem3 = document.getElementById("problem3");
+    var canvas3 = document.getElementById("problem3");
 };
 
 
@@ -96,7 +134,7 @@ Do not overlap any other object.
 //Draw Umbrella top here
 
 window.onload=function(){
-    var problem4 = document.getElementById("problem4");
+    var canvas4 = document.getElementById("problem4");
 };
 
 
@@ -111,7 +149,7 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 //Draw text here
 
 window.onload=function(){
-    var problem5 = document.getElementById("problem5");
+    var canvas5 = document.getElementById("problem5");
 };
 
 
@@ -131,7 +169,7 @@ Reminder to use the drawImage method for all 3 of the ways.
 //Draw images here
 
 window.onload=function(){
-    var problem6 = document.getElementById("problem6");
+    var canvas6 = document.getElementById("problem6");
 };
 
 
@@ -151,5 +189,5 @@ You must use at least 3 different methods.
 
 
 window.onload=function(){
-    var problem7 = document.getElementById("problem7");
+    var canvas7 = document.getElementById("problem7");
 };

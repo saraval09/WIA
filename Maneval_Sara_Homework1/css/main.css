@@ -1,8 +1,34 @@
 body{
 
+    background-image: url("../image/bg.png");
+
+}
+
+main{
+    width: 960px;
+    border: solid 5px #83d104;
+    border-radius: 10px;
+    margin: 0 auto;
+
 }
 
 #problem1, #problem2, #problem3, #problem4, #problem5, #problem6, #problem7 {
     border: solid 1px #000;
+    background-color: #d6d6d6;
 
+
+}
+
+h1{
+    text-align: center;
+    color: #6fae04;
+}
+
+h2{
+    color: #ae6800;
+    text-align: center;
+}
+
+#allCanvas{
+    margin: 50px 300px;
 }
