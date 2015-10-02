@@ -112,12 +112,36 @@ Height and width and color are up to you.
 
 //Draw Star here
 
+//worked in the try it editor on w3schools until I got the star then moved the code to here.
 
     var canvas3 = document.getElementById("problem3");
 
+    if (canvas3 && canvas3.getContext) {
+        var context3 = canvas2.getContext("2d");
+
+        if (context3) {
+            context3.beginPath();
+            context3.moveTo(100, 100);
+            context3.lineTo(150, 10);
+            context3.lineTo(200, 100);
+            context3.lineTo(100, 30);
+            context3.lineTo(190, 10);
+            context3.lineTo(100, 100);
+            context3.strokeStyle = "lime";
+            context3.fillStyle = "gold";
+            context3.lineWidth = 5;
+            context3.stroke();
+            context3.fill();
+
+        }
+
+    }
 
 
-/*******************************************
+
+
+
+    /*******************************************
 PART 4
 
 Practice drawing with Bezier curves.
