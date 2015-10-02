@@ -158,8 +158,24 @@ Do not overlap any other object.
 
     var canvas4 = document.getElementById("problem4");
 
+    if (canvas4 && canvas4.getContext) {
+        var context4 = canvas4.getContext("2d");
 
-/*******************************************
+        if (context4) {
+            context4.strokeStyle = "orange";
+            context4.lineWidth =3;
+            context4.beginPath();
+            context4.moveTo(133, 378);
+            context4.bezierCurveTo(118, 380, 218, 205, 348, 354);
+            context4.stroke();
+
+        }
+
+    }
+
+
+
+    /*******************************************
 PART 5
 
 Practice using text.
