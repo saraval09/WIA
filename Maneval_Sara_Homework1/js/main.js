@@ -223,6 +223,21 @@ Reminder to use the drawImage method for all 3 of the ways.
 
 
     var canvas6 = document.getElementById("problem6");
+    if (canvas6 && canvas6.getContext) {
+        var context6 = canvas6.getContext("2d");
+
+        if (context6) {
+
+
+            var image= document.getElementById("logo");
+
+            context6.drawImage(image, 0,0);
+            context6.drawImage(image, 10, 10, 1650, 544);
+            context6.drawImage(image,140, 60, 100, 200, 100, 100)
+
+        }
+
+    }
 
 
 

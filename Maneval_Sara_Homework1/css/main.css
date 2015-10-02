@@ -32,3 +32,8 @@ h2{
 #allCanvas{
     margin: 50px 300px;
 }
+
+#problem6{
+    position: relative;
+    left: -500px;
+}
