@@ -233,7 +233,7 @@ Reminder to use the drawImage method for all 3 of the ways.
 
             context6.drawImage(image, 0,0);
             context6.drawImage(image, 10, 10, 1650, 544);
-            context6.drawImage(image,140, 60, 100, 200, 100, 100)
+            context6.drawImage(image,240, 40, 100, 200, 50, 100,10,10);
 
         }
 
@@ -259,8 +259,57 @@ You must use at least 3 different methods.
 
     var canvas7 = document.getElementById("problem7");
 
+    if (canvas7 && canvas7.getContext) {
+        var context7 = canvas7.getContext("2d");
+
+        if (context7) {
+
+            context7.font = "25px Georgia";
+            context7.fillStyle = "black";
+            context7.strokeStyle = "#050050";
+            context7.fillText("Look What I Can Do On A Canvas! ", 10, 30);
+            context7.strokeText("Look What I Can Do On A Canvas!", 10, 30);
+
+            context7.beginPath();
+            context7.arc(70, 145, 50, 0, radians);
+            context7.fillStyle = "yellow";
+            context7.fill();
+
+            context7.beginPath();
+            context7.arc(90, 125, 10, 0, radians);
+            context7.fillStyle = "black";
+            context7.fill();
+
+            context7.beginPath();
+            context7.moveTo(130,115);
+            context7.lineTo(60,170);
+            context7.lineTo(115,170);
+            context7.fillStyle = "#d6d6d6";
+            context7.fill();
+
+            context7.fillStyle = "black";
+            context7.fillRect(130, 170, 25, 25);
+            context7.fillStyle = "black";
+            context7.fillRect(170, 170, 25, 25);
+            context7.fillStyle = "black";
+            context7.fillRect(210, 170, 25, 25);
+            context7.fillStyle = "black";
+            context7.fillRect(250, 170, 25, 25);
+            context7.fillStyle = "black";
+            context7.fillRect(300, 170, 25, 25);
+            context7.fillStyle = "black";
+            context7.fillRect(340, 170, 25, 25);
+
+            context7.font = "25px Times New Roman";
+            context7.fillStyle = "black";
+            context7.fillText("NOM!    NOM!   NOM! ", 100, 300);
 
 
+
+
+
+        }
+    }
 
 
 
