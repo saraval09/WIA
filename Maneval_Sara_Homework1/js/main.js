@@ -44,53 +44,56 @@ Reminder - set the style first then draw.
 
 //Draw Rectangle here
 
-window.onload=function(){
+window.onload = function(){
     var canvas1 = document.getElementById("problem1");
 
     if(canvas1 && canvas1.getContext){
         var context = canvas1.getContext("2d");
 
-        if(context){
-            context.strokeStyle="black";
-            context.fillStyle="blue";
+        if(context) {
+            context.strokeStyle = "black";
+            context.fillStyle = "blue";
             context.strokeRect(0, 0, 50, 100);
             context.fillRect(0, 0, 50, 100);
+        }
 
+    }
 
+            /*******************************************
+             PART 2
 
+             Draw a circle starting at point (50 ,50)
+             That has a radius of 20 px
+             Set the color of the circle to a shade of red and set the alpha to .5
+             Set the stroke color to black and use a radius of 30px for this circle.
 
-/*******************************************
-PART 2
-
-Draw a circle starting at point (50 ,50)
-That has a radius of 20 px 
-Set the color of the circle to a shade of red and set the alpha to .5
-Set the stroke color to black and use a radius of 30px for this circle.
-
-Reminder - set the style first then draw.
-Use the arc method
-********************************************/
+             Reminder - set the style first then draw.
+             Use the arc method
+             ********************************************/
 
 
 //Draw Circle here
 
 
-    var canvas2 = document.getElementById("problem2");
+            var canvas2 = document.getElementById("problem2");
 
-    if(canvas2 && canvas2.getContext){
-        var context = canvas2.getContext("2d");
+            if (canvas2 && canvas2.getContext) {
+                var context2 = canvas2.getContext("2d");
 
-        if(context){
+                if (context2) {
+                    var degrees = 360;
+                    var radians = (degrees / 180) * Math.PI;
+
+                    context2.beginPath();
+                    context2.arc(50, 50, 20, 0, radians);
+                    context2.strokeStyle = "black";
+                    context2.fillStyle = "rgba(255, 0, 0, .5)";
 
 
-            context.strokeStyle="black";
-            context.fillStyle="rgba(255, 0, 0, .5)";
-            context.beginPath();
-            context.arc(50, 50, 20, 0, (360/180)* Math.PI, true );
+                }
 
-        }
+            }
 
-    }
 
 
 
@@ -184,8 +187,12 @@ You must use at least 3 different methods.
 
 
     var canvas7 = document.getElementById("problem7");
-        }
 
-    }
-        };
+
+
+
+
+
+        }; //End of windows.onload
+
 
