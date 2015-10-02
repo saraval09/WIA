@@ -83,11 +83,13 @@ window.onload = function(){
                 if (context2) {
                     var degrees = 360;
                     var radians = (degrees / 180) * Math.PI;
-
                     context2.beginPath();
                     context2.arc(50, 50, 20, 0, radians);
                     context2.strokeStyle = "black";
                     context2.fillStyle = "rgba(255, 0, 0, .5)";
+                    //context2.lineWidth=30;
+                    context2.stroke();
+                    context2.fill();
 
 
                 }
@@ -117,7 +119,7 @@ Height and width and color are up to you.
     var canvas3 = document.getElementById("problem3");
 
     if (canvas3 && canvas3.getContext) {
-        var context3 = canvas2.getContext("2d");
+        var context3 = canvas3.getContext("2d");
 
         if (context3) {
             context3.beginPath();
