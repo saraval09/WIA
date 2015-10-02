@@ -56,10 +56,6 @@ window.onload=function(){
             context.strokeRect(0, 0, 50, 100);
             context.fillRect(0, 0, 50, 100);
 
-        }
-
-    }
-};
 
 
 
@@ -78,25 +74,24 @@ Use the arc method
 
 //Draw Circle here
 
-window.onload=function(){
+
     var canvas2 = document.getElementById("problem2");
 
     if(canvas2 && canvas2.getContext){
         var context = canvas2.getContext("2d");
 
         if(context){
-            var degrees = 180;
-            var radians = (degrees/180)*Math.PI;
+
 
             context.strokeStyle="black";
-            context.fillStyle="red";
+            context.fillStyle="rgba(255, 0, 0, .5)";
             context.beginPath();
-            context.arc(50, 50, 20, 0, radians);
+            context.arc(50, 50, 20, 0, (360/180)* Math.PI, true );
 
         }
 
     }
-};
+
 
 
 
@@ -114,9 +109,9 @@ Height and width and color are up to you.
 
 //Draw Star here
 
-window.onload=function(){
+
     var canvas3 = document.getElementById("problem3");
-};
+
 
 
 /*******************************************
@@ -133,9 +128,8 @@ Do not overlap any other object.
 
 //Draw Umbrella top here
 
-window.onload=function(){
+
     var canvas4 = document.getElementById("problem4");
-};
 
 
 /*******************************************
@@ -148,9 +142,9 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 
 //Draw text here
 
-window.onload=function(){
+
     var canvas5 = document.getElementById("problem5");
-};
+
 
 
 /*******************************************
@@ -168,9 +162,9 @@ Reminder to use the drawImage method for all 3 of the ways.
 
 //Draw images here
 
-window.onload=function(){
+
     var canvas6 = document.getElementById("problem6");
-};
+
 
 
 
@@ -188,6 +182,10 @@ You must use at least 3 different methods.
 // Draw scene here
 
 
-window.onload=function(){
+
     var canvas7 = document.getElementById("problem7");
-};
+        }
+
+    }
+        };
+
