@@ -1,0 +1,113 @@
+body {
+    background-color: #000000;
+}
+
+h1{
+    color: #e57f00;
+    text-align: center;
+    font-size: 3em;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Gridster styles */
+section {
+    padding: 3em 5em;
+}
+
+section:hover .gridster {
+    opacity: 1;
+}
+
+.gridster {
+    width: 940px;
+    margin: 0 auto;
+    opacity: .7;
+    -webkit-transition: opacity .7s;
+    transition: opacity .7s;
+}
+
+.gridster li {
+    background: #FFF;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+#wid1{
+    margin: 50px;
+    color: #f48b03;
+
+}
+
+#wid2{
+    margin: 50px;
+    color: #cb1100;
+}
+
+#wid3{
+    margin: 50px;
+    color: #3b3a3b;
+}
+
+#wid4{
+    margin: 30px 100px;
+    color: #83d104;
+}
+
+#wid5{
+    margin: 100px;
+    color: #0008f4;
+}
+
+#wid6{
+    margin: 50px;
+    color: #967bcc;
+}
+
+#wid7{
+    margin: 30px 100px;
+    color: #00a69a;
+}
+
+#wid8{
+    margin: 50px;
+    color: #f402b0;
+}
+
+#wid9{
+    margin: 50px;
+    color: #0a0073;
+}
+
+#wid10{
+    margin: 50px;
+    color: #000000;
+}
+
+#wid11{
+    margin: 50px;
+    color: #f66600;
+}
+
+#wid12{
+    margin-left: 35px;
+    color: #e5e500;
+}
+
+#wid13{
+    margin-left: 5px;
+    color: #a6d9dd;
+}
+#wid14{
+    margin-left: 65px;
+    color: #a6d9dd;
+}
+
+p{
+    color: #0001e5;
+    font-size: 1em;
+    text-align: center;
+}
