@@ -1,0 +1,16 @@
+section{
+    width:500px;
+    margin: 0 auto;
+    text-align: justify;
+
+
+}
+section> p{
+    color:#cccccc;
+
+}
+
+h2{
+    color: #931100;
+    font-weight: lighter;
+}
