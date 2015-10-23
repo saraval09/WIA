@@ -105,7 +105,43 @@ section> ul> li{
     padding: 20px;
     width: 300px;
     color: #cccccc;
+    float: left;
+    clear: left;
+
 }
+
+/***** Updates ****************/
+
+#updates> ul> li{
+    padding: 5px;
+}
+
+#updates> ul> li:before {
+    content: "\2713";
+    color: #931100;
+}
+
+#updates{
+    margin: 10px 20px;
+    border:solid 1px #959595 ;
+    border-radius: 5px;
+    box-shadow: #cccccc 1px 1px 1px inset;
+    padding: 20px;
+    width: 400px;
+    color: #cccccc;
+    float: right;
+
+}
+
+#updates> a{
+    color: #931100;
+}
+
+
+iframe{
+    margin: 50px 150px;
+}
+
 
 /***** Footer ****************/
 
@@ -115,4 +151,9 @@ footer{
     font-size: .8em;
     font-weight: 300;
     margin:20px 10px;
+}
+
+footer> a{
+    display: inline;
+    padding: 5px;
 }
