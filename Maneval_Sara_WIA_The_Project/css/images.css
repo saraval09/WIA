@@ -1,0 +1,13 @@
+section> a{
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+    color: #cccccc;
+}
+
+footer{
+    clear: left;
+}

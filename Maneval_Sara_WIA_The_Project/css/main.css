@@ -1,0 +1,118 @@
+
+/***** The Page ****************/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0; height: 0;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
+
+body{
+    font-family: 'open sans',arial,sans-serif;
+    text-transform: uppercase;
+}
+
+/***** The Header ****************/
+header, main{
+    width: 960px;
+    margin: 0 auto;
+}
+
+main{
+    background-image: url("../img/bg1.png");
+    padding: 10px;
+}
+
+h1{
+    float: left;
+    font-size: 3em;
+    font-weight: lighter;
+    margin:20px 0 0 10px;
+}
+strong{
+    color: #931100;
+    font-weight: bold;
+}
+
+#official{
+    float: right;
+    font-weight: lighter;
+    clear:both;
+    color: #cccccc;
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+/***** Navigation Bar ****************/
+
+nav{
+    border-top: 1px solid #dedede;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+nav> ul> li{
+    position: relative;
+    list-style: none;
+    float: left;
+
+}
+
+nav> ul> li:not(:last-of-type){
+    border-right: solid 1px #cccccc;
+}
+
+nav> ul> li:not(:first-of-type)::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    width: 3px;
+    height: 15px;
+    background: #ffffff;
+}
+
+a{
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+}
+
+/***** Upcoming Shows ****************/
+
+section> ul> li{
+    list-style: none;
+    padding-top: 5px;
+}
+
+#shows{
+    margin: 10px 20px;
+    border:solid 1px #959595 ;
+    border-radius: 5px;
+    box-shadow: #cccccc 1px 1px 1px inset;
+    padding: 20px;
+    width: 300px;
+    color: #cccccc;
+}
+
+/***** Footer ****************/
+
+footer{
+    color: #929292;
+    font-family: 'open sans',arial,sans-serif;
+    font-size: .8em;
+    font-weight: 300;
+    margin:20px 10px;
+}
