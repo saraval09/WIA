@@ -1,9 +1,12 @@
 $(document).ready(function() {
 
+
     $(".gallery_thumbnails a").click(function(e){
 
         //Disable the links
         e.preventDefault();
+
+
 
       //Create var to hold the links from the thumbnail
         var photo_fullview = $(this).attr("href");
@@ -28,6 +31,8 @@ $(document).ready(function() {
                 $(".gallery_preview").html('<a class="overlayLink" href="'+photo_fullview+'" style="background-image:url('+photo_preview+')"</a>');
                 //Fade Back in the preview window
                 $(".gallery_preview").fadeIn(500);
+
+
 
                 setFancyBoxLinks();
                 updateThumbnails();
@@ -94,5 +99,9 @@ function updateThumbnails(){
         }
 
     });
+
+
+
+
 
 }
