@@ -86,7 +86,7 @@ nav> ul> li:not(:first-of-type)::after{
     background: #ffffff;
 }
 
-a{
+nav> ul> li> a{
     display: block;
     padding: 25px;
     text-decoration: none;
@@ -114,29 +114,15 @@ section> ul> li{
 
 
 /***** Map ****************/
-
 h3{
-    color: #00003f;
+    color: #931100;
+    font-weight: bold;
 }
 
-h2{
+h2, address{
     color: #cccccc;
     text-align: center;
 }
-
-/*  City Info   */
-
-/*.city_detail_container {
-    display: none;
-    background-color: rgba(0,0,0, 0.3);
-}
-
-.city_detail_container .city_detail {
-    width: 300px;
-    background-color: rgba(0,0,0, 0.3);
-    border: 1px solid #2e2e2e;
-}*/
-
 
 /*  Interactive Map Container */
 .map_container {
@@ -149,10 +135,29 @@ h2{
     margin:20px auto;
 }
 
-/*.map_container .clear_both {
-    clear: both;
-    line-height: 1px;
+.map_container a.dot {
+    background: url(../img/dots.png) no-repeat 0 0;
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
 }
+
+.map_container a.dot:hover {
+    background-position: 0 -20px;
+}
+
+.map_container a.dot.selected {
+    background-position: 0 -40px;
+}
+
+.map_container .form_cities {
+    position: absolute;
+    top: 265px;
+    left: 30px;
+}
+
 
 .map_container .city_info h2 {
     margin: 0 0 0 0;
@@ -175,30 +180,15 @@ h2{
 .map_container a, a:visited {
     color: #AA0000;
     margin: 0 10px 0 0;
-}*/
-
-.map_container a.dot {
-    background: url(../img/dots.png) no-repeat 0 0;
-    height: 20px;
-    width: 20px;
-    display: block;
-    position: absolute;
-    cursor: pointer;
-}
-/*.map_container a.dot.selected {
-    background-position: 0 -40px;
-}*/
-
-.map_container a.dot:hover {
-    background-position: 0 -20px;
 }
 
-/*.map_container .detail_container {
+.map_container .detail_container {
     position: absolute;
     top: 35px;
     left: 480px;
     width: 240px;
     height: 260px;
+
 }
 
 .map_container .city_detail {
@@ -206,11 +196,10 @@ h2{
     top: 0;
     width: 230px;
     padding: 10px 0 0 12px;
-    border-left: 1px solid #a9b5c8;
-    border-top: 1px solid #a9b5c8;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    border:solid 1px #959595 ;
+    border-radius: 5px;
+    box-shadow: #cccccc 1px 1px 1px inset;
+    background-color: rgba(0,0,0, 0.9);
 }
 
 .map_container .city_detail .city_photo {
@@ -226,9 +215,22 @@ h2{
 .map_container .city_detail .city_info {
     width: 130px;
     float: left;
-}*/
+}
 
+/*  City Info   */
 
+.city_detail_container {
+    display: none;
+    background-color: rgba(0,0,0, 0.3);
+    color: #00003f;
+}
+
+.city_detail_container .city_detail {
+    width: 300px;
+    background-color: rgba(0,0,0, 0.3);
+    border: 1px solid #2e2e2e;
+    color: #00003f;
+}
 
 /***** Updates ****************/
 
