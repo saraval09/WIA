@@ -7,6 +7,7 @@ section{
 }
 section> p{
     color:#cccccc;
+    line-height: 150%;
 
 }
 
@@ -16,14 +17,21 @@ h2{
 }
 
 #sound{
-    width:300px;
+    width:500px;
     margin: 0 auto;
+    padding: 5px;
+    background-color: rgba(0,0,0, 0.3);
+    border:solid 1px #959595 ;
+    border-radius: 5px;
+    box-shadow: #cccccc 1px 1px 1px inset;
+    text-align: center;
 }
 
 
 #audio{
     margin: 20px;
 }
+
 
 button{
     width: 50%;

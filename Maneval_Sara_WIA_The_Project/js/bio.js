@@ -21,3 +21,15 @@ function clicked(){
     audio.currentTime +=10;
 
 }
+
+var srcVid =document.getElementById("vid1");
+
+srcVid.play();
+
+setInterval(function(){
+
+    ctx.drawImage(srcVid, 0,0, 480, 270);
+
+}, 30);
+
+

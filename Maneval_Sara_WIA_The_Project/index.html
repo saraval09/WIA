@@ -9,62 +9,54 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
 </head>
 <body>
-    <header class="clearfix">
-        <h1><strong>Eric</strong></h1><h1 id="val">Val</h1>
-        <h2 id="official">Official Website</h2>
-        <nav>
+<header class="clearfix">
+    <h1><strong>Eric</strong></h1>
+    <h1 id="val">Val</h1>
+    <h2 id="official">Official Website</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main >
+    <section>
+        <section id="shows">
+            <h2>Upcoming Shows:</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="images.html">Images</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><strong>The Spartan Pub</strong> 11/7/2015</li>
+                <li><strong>Riepstine's Pub</strong> 11/21/2015</li>
+                <li><strong>Hull's Landing</strong> 12/4/2015</li>
+                <li><strong>The Mill Tavern Bar & Restaurant</strong> 12/12/2015</li>
             </ul>
-        </nav>
-
-    </header>
-
-
-    <main >
-        <section>
-            <section id="shows">
-                <h2>Upcoming Shows:</h2>
-                <ul>
-                    <li><strong>The Spartan Pub</strong> 11/7/2015</li>
-                    <li><strong>Riepstine's Pub</strong> 11/21/2015</li>
-                    <li><strong>Hull's Landing</strong> 12/4/2015</li>
-                    <li><strong>The Mill Tavern Bar & Restaurant</strong> 12/12/2015</li>
-                </ul>
-            </section>
-            <h2>Map To The Shows</h2>
-
-            <div class="map_container">
-
-                <!-- Dots -->
-                <a class="dot" style="top:107px;  left:420px;" cities="hughesville"></a>
-                <a class="dot" style="top:110px;  left:380px;" cities="williamsport"></a>
-                <a class="dot" style="top:118px;  left:417px;" cities="muncy" ></a>
-                <a class="dot" style="top:110px;  left:400px;" cities="montoursville"></a>
-
-               <form id="mapForm" name="mapForm" class="form_cities" method="post" action="">
-                    <select name="cities" id="cities">
-                        <option value="hughesville">Hughesville</option>
-                        <option value="williamsport">Williamsport</option>
-                        <option value="muncy">Muncy</option>
-                        <option value="montoursville">Montoursville</option>
-                        <option value="ALL" selected="selected">Show all cities</option>
-                    </select>
-                </form>
-
-                <div class="detail_container">
-                    <!-- City -->
-                    <div class="city_detail">
-                        <h3>Choose a city</h3>
-                    </div>
+        </section>
+        <h2>Map To The Shows</h2>
+        <div class="map_container">
+            <!-- Dots -->
+            <a class="dot" style="top:107px;  left:420px;" cities="hughesville"></a>
+            <a class="dot" style="top:110px;  left:380px;" cities="williamsport"></a>
+            <a class="dot" style="top:118px;  left:417px;" cities="muncy" ></a>
+            <a class="dot" style="top:110px;  left:400px;" cities="montoursville"></a>
+            <form id="mapForm" name="mapForm" class="form_cities" method="post" action="">
+                <select name="cities" id="cities">
+                    <option value="hughesville">Hughesville</option>
+                    <option value="williamsport">Williamsport</option>
+                    <option value="muncy">Muncy</option>
+                    <option value="montoursville">Montoursville</option>
+                    <option value="ALL" selected="selected">Show all cities</option>
+                </select>
+            </form>
+            <div class="detail_container">
+                <!-- City -->
+                <div class="city_detail">
+                    <h3>Choose a city</h3>
                 </div>
             </div>
-
-            <div class="city_detail_container">
-
+        </div>
+        <div class="city_detail_container">
             <!-- City -->
             <div class="city_detail" id="hughesville">
                 <img class="city_photo" src="img/spartan.jpeg" alt="hughesville" width="75" height="75" />
@@ -72,76 +64,59 @@
                     <h2>The Spartan Pub</h2>
                     <address>104 N Main St, Hughesville, PA 17737</address>
                 </div>
-
             </div>
-
-
             <!-- City -->
             <div class="city_detail" id="williamsport">
                 <img class="city_photo" src="img/riepstine.jpg" alt="williamsport" width="75" height="75" />
                 <div class="city_info">
                     <h2>Riepstine's Pub</h2>
-                   <address>913 Arch St, Williamsport, PA 17701</address>
-
+                    <address>913 Arch St, Williamsport, PA 17701</address>
+                </div>
+                <!-- City -->
+                <div class="city_detail" id="muncy">
+                    <img class="city_photo" src="img/hulls.jpg" alt="muncy" width="75" height="75" />
+                    <div class="city_info">
+                        <h2>Hull's Landing</h2>
+                        <address>27 PA-442, Muncy, PA 17756</address>
+                    </div>
+                </div>
+                <!-- City -->
+                <div class="city_detail" id="montoursville">
+                    <img class="city_photo" src="img/mill.jpg" alt="montoursville" width="75" height="75" />
+                    <div class="city_info">
+                        <h2>The Mill Tavern Bar & Restaurant</h2>
+                        <address>319 Broad St, Montoursville, PA 17754</address>
+                    </div>
+                </div>
             </div>
-
-
-            <!-- City -->
-            <div class="city_detail" id="muncy">
-                <img class="city_photo" src="img/hulls.jpg" alt="muncy" width="75" height="75" />
-                <div class="city_info">
-                    <h2>Hull's Landing</h2>
-                    <address>27 PA-442, Muncy, PA 17756</address>
-                </div>
-
-            </div>
-
-
-            <!-- City -->
-            <div class="city_detail" id="montoursville">
-                <img class="city_photo" src="img/mill.jpg" alt="montoursville" width="75" height="75" />
-                <div class="city_info">
-                    <h2>The Mill Tavern Bar & Restaurant</h2>
-                    <address>319 Broad St, Montoursville, PA 17754</address>
-                </div>
-
-            </div>
-                </div>
-                </div>
-        </section>
-
-        <section id="updates">
-            <h2>Updates:</h2>
-            <ul>
-                <li>New single <i>Beautiful Lie</i> is out now!</li>
-                <li>Check out the new music video below! </li>
-                <li>Stay Updated on Eric's YouTube Channel!</li>
-            </ul>
-            <a href="https://www.youtube.com/user/EricValMusic">Click
-                Here For Eric's YouTube Channel!</a>
-
-        </section>
-        <article>
-            <iframe width="640" height="360"
-                    src="http://www.youtube.com/embed/SjGZoALjiLQ">
-            </iframe>
-
-        </article>
-
-        <footer>
-            <p>Copyright Eric Val &copy; 2015 | Privacy Policy</p>
-            <a href="https://www.facebook.com/eric.val?fref=ts"><img src="img/icon1.png" alt="Facebook"
-                                                                             width="32" height="32"></a>
-            <a href="https://twitter.com/ericvalmusic"> <img src="img/icon2.png" alt="Twitter" width="32"
-                                                                height="32"></a>
-            <a href="https://plus.google.com/+EricVal/posts"><img src="img/icon4.png" alt="Google" width="32"
-                                                                       height="32"></a>
-            <a href="https://www.linkedin.com/profile/view?id=AAkAAArC7lcB1ILPnck8ocrItIzIy6Is7EUkXZI&authType=NAME_SEARCH&authToken=gZTw&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A180547159%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1445566846617%2Ctas%3Aeric%20val"><img src="img/icon5.png" alt="LinkedIn" width="32" height="32"></a>
-        </footer>
-
-    </main>
+        </div>
+    </section>
+    <section id="updates">
+        <h2>Updates:</h2>
+        <ul>
+            <li>New single <i>Beautiful Lie</i> is out now!</li>
+            <li>Check out the new music video below! </li>
+            <li>Stay Updated on Eric's YouTube Channel!</li>
+        </ul>
+        <a href="https://www.youtube.com/user/EricValMusic">Click
+            Here For Eric's YouTube Channel!</a>
+    </section>
+    <article>
+        <iframe width="640" height="360"
+                src="http://www.youtube.com/embed/SjGZoALjiLQ">
+        </iframe>
+    </article>
+    <footer>
+        <p>Copyright Eric Val &copy; 2015 | Privacy Policy</p>
+        <a href="https://www.facebook.com/eric.val?fref=ts"><img src="img/icon1.png" alt="Facebook"
+                                                                 width="32" height="32"></a>
+        <a href="https://twitter.com/ericvalmusic"> <img src="img/icon2.png" alt="Twitter" width="32"
+                                                         height="32"></a>
+        <a href="https://plus.google.com/+EricVal/posts"><img src="img/icon4.png" alt="Google" width="32"
+                                                              height="32"></a>
+        <a href="https://www.linkedin.com/profile/view?id=AAkAAArC7lcB1ILPnck8ocrItIzIy6Is7EUkXZI&authType=NAME_SEARCH&authToken=gZTw&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A180547159%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1445566846617%2Ctas%3Aeric%20val"><img src="img/icon5.png" alt="LinkedIn" width="32" height="32"></a>
+    </footer>
+</main>
 <!--=== End of Container ===-->
-<!--==== Scripts ====-->
-
 </body>
 </html>

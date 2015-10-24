@@ -1,5 +1,6 @@
 
 /***** The Page ****************/
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -19,10 +20,10 @@
 body{
     font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
     text-transform: uppercase;
-
 }
 
 /***** The Header ****************/
+
 header, main{
     width: 960px;
     margin: 0 auto;
@@ -40,6 +41,7 @@ h1{
     margin:20px 0 0 10px;
     color: #cccccc;
 }
+
 strong{
     color: #931100;
     font-weight: bold;
@@ -62,13 +64,12 @@ nav{
     overflow: hidden;
     width: 100%;
     background-color: #ffffff;
-
 }
+
 nav> ul> li{
     position: relative;
     list-style: none;
     float: left;
-
 }
 
 nav> ul> li:not(:last-of-type){
@@ -108,10 +109,7 @@ section> ul> li{
     padding: 20px;
     width: 500px;
     color: #cccccc;
-
-
 }
-
 
 /***** Map ****************/
 h3{
@@ -124,7 +122,6 @@ h2, address{
     text-align: center;
 }
 
-/*  Interactive Map Container */
 .map_container {
     background: url(../img/map.jpg) no-repeat 0 0;
     height: 325px;
@@ -158,7 +155,6 @@ h2, address{
     left: 30px;
 }
 
-
 .map_container .city_info h2 {
     margin: 0 0 0 0;
     font-size: 18px;
@@ -174,7 +170,6 @@ h2, address{
 }
 .map_container p {
     margin: 0 0 12px 0;
-
 }
 
 .map_container a, a:visited {
@@ -188,7 +183,6 @@ h2, address{
     left: 480px;
     width: 240px;
     height: 260px;
-
 }
 
 .map_container .city_detail {
@@ -216,8 +210,6 @@ h2, address{
     width: 130px;
     float: left;
 }
-
-/*  City Info   */
 
 .city_detail_container {
     display: none;
