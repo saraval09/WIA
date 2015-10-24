@@ -5,27 +5,27 @@ $(document).ready(function() {
         //Disable the links
         e.preventDefault();
 
-     /*   //Create var to hold the links from the thumbnail
-        var photo_fullsize = $(this).attr("href");
+      //Create var to hold the links from the thumbnail
+        var photo_fullview = $(this).attr("href");
 
 
         //Create our preview link
-        var photo_preview = photo_fullsize.replace("_fullsize", "_preview");
+        var photo_preview = photo_fullview.replace("_fullview", "_preview");
 
 
 
 
         //Fade out the preview area
-        $(".gallery_preview").fadeOut(500, function(){
+           $(".gallery_preview").fadeOut(500, function(){
             //Preload our clicked image
             $(".gallery_preload_area").html('<img src="'+photo_preview+'" />');
 
             //Once image is preloaded then we can use it
 
             $(".gallery_preload_area img").imgpreload(function(){
-                console.log("test");
-                //Change the picture and link for the preview area
-                $(".gallery_preview").html('<a class="overlayLink" href="'+photo_fullsize+'" style="background-image:url('+photo_preview+')"</a>');
+
+               //Change the picture and link for the preview area
+                $(".gallery_preview").html('<a class="overlayLink" href="'+photo_fullview+'" style="background-image:url('+photo_preview+')"</a>');
                 //Fade Back in the preview window
                 $(".gallery_preview").fadeIn(500);
 
@@ -43,12 +43,12 @@ $(document).ready(function() {
     //Create first variables
 
 
-    var first_photo_fullsize= $(".gallery_thumbnails a").first().attr("href");
-    var first_photo_preview=first_photo_fullsize.replace("_fullsize", "_preview");
+    var first_photo_fullview= $(".gallery_thumbnails a").first().attr("href");
+    var first_photo_preview=first_photo_fullview.replace("_fullview", "_preview");
 
 
 
-    $(".gallery_preview").html('<a class="overlayLink" " href="'+first_photo_fullsize+'" style="background-image:url('+first_photo_preview+');"></a>');
+    $(".gallery_preview").html('<a class="overlayLink" " href="'+first_photo_fullview+'" style="background-image:url('+first_photo_preview+');"></a>');
 
 
 
@@ -91,9 +91,8 @@ function updateThumbnails(){
             $(this).children().css("opacity", "1");
 
 
-        }*/
+        }
 
     });
 
-
-});
+}
