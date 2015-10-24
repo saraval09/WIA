@@ -3,6 +3,10 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Eric Val</title>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/bio.js"></script>
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/bio.css" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
@@ -32,7 +36,15 @@
             After 3 years he released his first album <i>3 Year Struggle</i> and continues to strive for the best to this day.</p>
     </section>
 
+<div id="sound">
+    <audio id="audio" controls>
+        <source src="audio/pull_me_under.mp3" type="audio/mpeg"/>
+        <source src="audio/pull_me_under.ogg" type="audio/ogg"/>
+        Audio Is Not Supported
+    </audio>
 
+    <button onclick="clicked()">Skip 10 Seconds</button>
+</div>
 
     <footer>
         <p>Copyright Eric Val &copy; 2015 | Privacy Policy</p>
@@ -47,8 +59,7 @@
 
 </main>
 <!--=== End of Container ===-->
-<!--==== Scripts ====-->
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+
+
 </body>
 </html>
